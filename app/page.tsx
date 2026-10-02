@@ -1,7 +1,5 @@
+import { EditorShell } from "@/components/editor/editor-shell";
+
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold">ghost AI</h1>
-    </div>
-  );
+  return <EditorShell />;
 }

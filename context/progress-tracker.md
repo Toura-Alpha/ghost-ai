@@ -4,15 +4,16 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Design System & UI Primitives
+- Editor Chrome & Sidebar
 
 ## Current Goal
 
-- Implement the design system and UI primitive components per `feature-specs/01-design-system.md`.
+- Implement and verify the editor chrome shell described in `feature-specs/02-editor-chrome.md`.
 
 ## Completed
 
-- **Design System & UI Primitives** (`feature-specs/01-design-system.md`): Successfully installed and configured shadcn/ui with all required components (Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea), lucide-react (v1.50.0), created `lib/utils.ts` with `cn()` helper, dark theme verified in `globals.css` with proper CSS variables.
+- **Design System & UI Primitives** (`feature-specs/01-design-system.md`): Installed and configured shadcn/ui components (Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea), added `lucide-react`, created `lib/utils.ts` with `cn()`, and confirmed the dark theme tokens are in place.
+- **Editor Chrome & Sidebar** (`feature-specs/02-editor-chrome.md`): Added the reusable `EditorNavbar` with fixed top bar, left toggle behavior, empty right section, and dark border treatment; added the floating `ProjectSidebar` with slide-in behavior, `Projects` header, close action, empty tabs, and bottom `New Project` action; kept the dialog pattern ready for future use without building actual dialogs yet.
 
 ## In Progress
 
@@ -32,4 +33,4 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Session Notes
 
-- Add context needed to resume work in the next session.
+- This milestone is scoped to the exact editor shell described in `02-editor-chrome.md` and does not include later canvas or AI features.
